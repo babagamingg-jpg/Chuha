@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bihar Board English Literature Teacher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Tiro+Devanagari+Hindi:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.25.0"
+  }
+}
+</script>
+  <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        /* "Focused Cosmos" Theme - A premium, focused feel */
+        background-color: #0b1120; /* A fallback for the deep blue theme */
+        overflow: hidden; /* Prevent layout-induced scrollbars */
+      }
+
+      body::before {
+        content: '';
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        z-index: -1;
+        /* A radial gradient to create a subtle vignette, focusing the user's attention. */
+        background: radial-gradient(ellipse at center, rgba(20, 30, 50, 0.8) 0%, rgba(11, 17, 32, 1) 70%);
+      }
+      
+      /* Ensure dark mode text defaults are appropriate for the dark background */
+      body.dark {
+         color: #e5e7eb;
+      }
+      body {
+         color: #e5e7eb;
+      }
+
+      .font-hindi {
+        font-family: 'Tiro Devanagari Hindi', serif;
+      }
+
+      /* Styles for fullscreen background to ensure consistency */
+      .cosmic-background {
+        position: relative;
+        background-color: #0b1120;
+        z-index: 0; /* Establish stacking context */
+      }
+      .cosmic-background::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        z-index: -1;
+        /* A radial gradient to create a subtle vignette, focusing the user's attention. */
+        background: radial-gradient(ellipse at center, rgba(20, 30, 50, 0.8) 0%, rgba(11, 17, 32, 1) 70%);
+      }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="text-gray-900 dark:text-gray-100">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
